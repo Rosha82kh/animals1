@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animals.HelloController">
+   <children>
+      <TableView fx:id="BKtblview" layoutX="25.0" layoutY="107.0" prefHeight="263.0" prefWidth="926.0">
+        <columns>
+          <TableColumn fx:id="col_bookingNo" prefWidth="162.0" text="bookingNo" />
+          <TableColumn fx:id="col_custNo" prefWidth="311.0" text="custNo" />
+            <TableColumn fx:id="col_animalNo" prefWidth="121.0" text="animalNo" />
+            <TableColumn fx:id="col_weekNo" prefWidth="170.0" text="weekNo" />
+            <TableColumn fx:id="col_cageNo" prefWidth="161.0" text="cageNo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_Add" layoutX="131.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="61.0" prefWidth="104.0" text="Add" />
+      <Button fx:id="btn_Delete" layoutX="319.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="61.0" prefWidth="104.0" text="Delete" />
+      <Button fx:id="btn_update" layoutX="515.0" layoutY="498.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="104.0" text="Update" />
+      <Button fx:id="btn_close" layoutX="671.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnCloseAction" prefHeight="61.0" prefWidth="104.0" text="Close" />
+      <Label fx:id="lbl_AnimalsHome" layoutX="368.0" layoutY="51.0" text="Insert Booking" textFill="#e8c332">
+         <font>
+            <Font name="Britannic Bold" size="32.0" />
+         </font></Label>
+      <TextField fx:id="txt_custNo" layoutX="291.0" layoutY="428.0" prefHeight="31.0" prefWidth="104.0" promptText="Enter custNo" />
+      <TextField fx:id="txt_animalNo" layoutX="403.0" layoutY="428.0" prefHeight="31.0" prefWidth="104.0" promptText="Enter animalNo" />
+      <TextField fx:id="txt_weekNo" layoutX="515.0" layoutY="428.0" prefHeight="31.0" prefWidth="104.0" promptText="Enter weekNo" />
+      <TextField fx:id="txt_bookingNo" layoutX="180.0" layoutY="428.0" prefHeight="31.0" prefWidth="104.0" promptText="Enter bookingNo" />
+      <TextField fx:id="txt_cageNO" layoutX="631.0" layoutY="428.0" prefHeight="31.0" prefWidth="104.0" promptText="Enter cageNo" />
+   </children>
+</AnchorPane>
